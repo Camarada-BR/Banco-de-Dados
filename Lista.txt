@@ -1,0 +1,41 @@
+Temos 9 Tabelas 
+> Cliente:
+  Codigo do cliente : PK
+  Nome do Cliente 
+
+> Produto:
+  Codigo do Produto : PK
+  Nome do Produto 
+  Indicador de Produto Ativo
+
+> Vendedor:
+  Codigo do Vendedor : PK
+  Codigo da Regiao do Vendedor : FK
+
+> Regiao:
+  Codigo da Regiao : PK
+  Nome da Regiao 
+
+> Ponto Estrategico:
+  Codigo do Ponto Estrategico : PK
+  Codigo da Regiao : FK 
+
+> Veiculo:
+  Codigo do Veiculo : PK
+  Numero da Placa do Veiculo 
+
+> Utilizacao de Veiculo
+  Codigo de Veiculo : FK
+  Data de Utilizacao de Veiculo
+  Codigo do Vendedor : FK
+
+> Item da Nota Fiscal 
+  Numero da Nota Fiscal : FK
+  Numero do Item da Nota Fiscal : PK
+  Codigo do Produto : PK
+  Quantidade do Produto
+
+> Nota Fiscal 
+  Numero da Nota Fiscal : PK
+  Codigo do Cliente : FK
+  Codigo do Vendedor : FK
